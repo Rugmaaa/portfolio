@@ -3,6 +3,8 @@
    align-items: center;
    justify-content: space-between;
    margin: 20px 170px;
+   
+  
   }
 .nav-image{
     width:10%;
@@ -16,5 +18,5 @@
   color: #333;
   font-weight: 500;
   color:white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }

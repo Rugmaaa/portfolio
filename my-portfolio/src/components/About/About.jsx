@@ -1,47 +1,36 @@
 import React from 'react';
 import profile from '../../assets/images.png';
-import './About.css'; // Import your CSS file
+import ug from '../../assets/ug.png';
+import hse from '../../assets/hse.png';
+import './About.css';
 
 function About() {
   return (
     <div className="About">
-      <h2>About Me</h2>
-      <p>
-        Hello! I'm a passionate developer with experience in React, Node.js, and modern web technologies.
+      <h1 className="about-head">About Me</h1>
+      <img src={profile} alt="Profile of Rugma" className="about-image" />
+      <h2>Rugma</h2>
+      <p><strong>Age:</strong> 21</p>
+      <p><strong>Email:</strong> rugma@gmail.com</p>
+      <p className="about-p">
+        Hi! I'm Rugma, a passionate and detail-oriented frontend developer with a love for crafting intuitive and visually appealing web experiences. 
+        With a strong foundation in HTML, CSS, JavaScript, and modern frontend frameworks like React, Vue.js, and Angular, 
+        I specialize in turning design concepts into responsive, high-performance websites and applications.
       </p>
-      <div>
-        <img src={profile} alt='Profile' className='About_img' />
-        <div className="profile-info">
-          <h2>Web Developer</h2>
-          <p>
-            I specialize in creating dynamic and responsive websites using modern web technologies. I enjoy problem-solving and continuous learning to stay up-to-date with the latest industry trends.
-          </p>
-        </div>
-        <h3>Skills</h3>
-        <ul>
-          <li>React</li>
-          <li>JavaScript</li>
-          <li>Node.js</li>
-          <li>HTML/CSS</li>
-          <li>Redux</li>
-          <li>Version Control (Git)</li>
-          <li>API Development</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Education</h3>
+      <h1 className='about-head'>Education</h1>
+      <div className="education">
         <ul className="education-list">
-          <li>
-            <strong>Undergraduate (UG):</strong> Bachelor of Technology (B.Tech) in Computer Science from XYZ University, 2018-2022
+          <li className="education-item">
+            <p>BSc Computer Science</p>
+            <img src={ug} alt="BSc Computer Science" className='education_img'/>
           </li>
-          <li>
-            <strong>Postgraduate (PG):</strong> Master of Technology (M.Tech) in Software Engineering from ABC University, 2022-2024
+          <li className="education-item">
+            <p>Plus Two</p>
+            <img src={hse} alt="Plus Two" education_img />
           </li>
-          <li>
-            <strong>Plus Two (Higher Secondary):</strong> Science (PCMB) from XYZ High School, 2016-2018
-          </li>
-          <li>
-            <strong>SSLC (Secondary School):</strong> XYZ High School, 2016
+          <li className="education-item">
+            <p>SSLC</p>
+            <img src={hse} alt="SSLC" education_img />
           </li>
         </ul>
       </div>
